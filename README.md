@@ -1,16 +1,91 @@
-## Hi there 👋
+# 🎵 音乐可视化效果器 (Music Visualizer)
 
-<!--
-**Tomwang86/Tomwang86** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+一个功能丰富的网页版音乐可视化工具，支持多种动态效果展示。
 
-Here are some ideas to get you started:
+## ✨ 特性
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- 🎨 **4种可视化模式**
+  - 频谱条 (Bars) - 经典的音频频谱柱状图
+  - 圆形波纹 (Circle) - 放射状圆形音频可视化
+  - 波形 (Wave) - 动态波浪效果
+  - 粒子效果 (Particles) - 互动粒子系统
+
+- 🎮 **完整的播放控制**
+  - 播放/暂停/停止
+  - 音量调节
+  - 进度条拖拽
+  - 时间显示
+
+- 🎭 **精美的界面设计**
+  - 渐变背景
+  - 毛玻璃效果
+  - 响应式设计
+  - 流畅动画
+
+## 🚀 使用方法
+
+1. 在浏览器中打开 `index.html` 文件
+2. 点击"选择音乐文件"按钮，上传本地音乐文件（支持 MP3, WAV, OGG 等格式）
+3. 选择想要的可视化模式
+4. 点击播放按钮，享受音乐与视觉的完美结合！
+
+## 📁 文件结构
+
+```
+.
+├── index.html      # 主HTML文件
+├── styles.css      # 样式表
+├── script.js       # JavaScript逻辑
+└── README.md       # 项目说明
+```
+
+## 🛠️ 技术栈
+
+- **HTML5** - 页面结构
+- **CSS3** - 样式和动画
+- **JavaScript (ES6+)** - 交互逻辑
+- **Web Audio API** - 音频分析
+- **Canvas API** - 可视化渲染
+
+## 🎨 可视化模式详解
+
+### 1. 频谱条 (Bars)
+经典的音频频谱显示，每个柱状条代表不同的频率范围，高度随音频强度变化。
+
+### 2. 圆形波纹 (Circle)
+以圆形为中心向外放射的频谱线条，创造出独特的视觉效果。
+
+### 3. 波形 (Wave)
+三层彩色波浪随音频节奏起伏，营造流动的视觉体验。
+
+### 4. 粒子效果 (Particles)
+100个互动粒子根据音频强度变化大小、速度和连接关系，打造动态粒子宇宙。
+
+## 🌐 浏览器兼容性
+
+- ✅ Chrome 60+
+- ✅ Firefox 55+
+- ✅ Safari 11+
+- ✅ Edge 79+
+
+## 📝 注意事项
+
+- 需要现代浏览器支持 Web Audio API 和 Canvas API
+- 建议使用本地服务器运行以避免跨域问题
+- 首次播放时浏览器可能要求用户交互权限
+
+## 🎯 未来改进
+
+- [ ] 添加更多可视化效果
+- [ ] 支持在线音乐播放
+- [ ] 添加全屏模式
+- [ ] 导出可视化为视频
+- [ ] 自定义颜色主题
+
+## 📄 许可证
+
+MIT License
+
+---
+
+享受音乐与视觉的完美融合！🎵✨
