@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音乐可视化效果器</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">🎵 音乐可视化效果器</h1>
+        
+        <div class="controls">
+            <input type="file" id="audioFile" accept="audio/*" class="file-input">
+            <label for="audioFile" class="file-label">
+                <span class="upload-icon">📁</span>
+                选择音乐文件
+            </label>
+            
+            <div class="control-buttons">
+                <button id="playBtn" class="btn btn-play" disabled>
+                    <span class="icon">▶️</span> 播放
+                </button>
+                <button id="pauseBtn" class="btn btn-pause" disabled>
+                    <span class="icon">⏸️</span> 暂停
+                </button>
+                <button id="stopBtn" class="btn btn-stop" disabled>
+                    <span class="icon">⏹️</span> 停止
+                </button>
+            </div>
+
+            <div class="volume-control">
+                <label for="volumeSlider">音量：</label>
+                <input type="range" id="volumeSlider" min="0" max="100" value="70" class="slider">
+                <span id="volumeValue">70%</span>
+            </div>
+
+            <div class="visualizer-mode">
+                <label>可视化模式：</label>
+                <select id="modeSelect" class="mode-select">
+                    <option value="bars">频谱条</option>
+                    <option value="circle">圆形波纹</option>
+                    <option value="wave">波形</option>
+                    <option value="particles">粒子效果</option>
+                </select>
+            </div>
+        </div>
+
+        <canvas id="visualizer"></canvas>
+
+        <div class="info">
+            <div class="track-info">
+                <span id="trackName">未选择音乐</span>
+            </div>
+            <div class="time-info">
+                <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+            </div>
+            <div class="progress-bar">
+                <div id="progress" class="progress"></div>
+            </div>
+        </div>
+
+        <audio id="audio"></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
